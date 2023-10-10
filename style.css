@@ -645,7 +645,7 @@ form textarea {
     }
 
     form input,  form textarea {
-        width: 500px;
+        width: 530px;
     }
 }
 
@@ -673,10 +673,16 @@ form textarea {
     }
 }
 
+@media only screen and (max-width: 1065px) {
+    form input, form textarea {
+        width: 490px;
+    }
+}
+
 @media only screen and (max-width: 1050px) {
     .container {
-        width: 50%;
-        height: 100%;
+        width: 50vw;
+        height: 100vh;
     }
 
     .groups h2 {
@@ -686,7 +692,7 @@ form textarea {
     }
 
     .container-isi {
-        height: 87vh;
+        height: 59vh;
     }
 
     .button-click {
@@ -695,13 +701,13 @@ form textarea {
     }
 
     .line2 {
-        top: 75px;
+        top: 55px;
         left: 370px;
         height: 90%;
     }
 
     .line4 {
-        top: 75px;
+        top: 55px;
         right: 385px;
         height: 90%;
     }
@@ -896,7 +902,7 @@ form textarea {
 
 @media only screen and (max-width: 600px) {
     .container-full {
-        height: 90vh;
+        height: 100vh;
     }
 
     .container-full img {
@@ -904,7 +910,7 @@ form textarea {
     }
 
     .container-isi {
-        height: 112vh;
+        height: 103vh;
     }
 
     .container {
@@ -922,7 +928,7 @@ form textarea {
 
     .button-click {
         margin-top: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
         white-space: nowrap;
     }
 }
