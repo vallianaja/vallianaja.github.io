@@ -388,11 +388,12 @@ form textarea {
     background: #080808;
     display: flex;
     align-items: center;
+    overflow-y: hidden;
 }
 
 .about-kiri {
     width: 50%;
-    color: #cacaca;
+    color: #ffffff;
     margin-left: 100px;
     margin-top: 40px;
     font-family: 'Lato';
@@ -404,10 +405,10 @@ form textarea {
 }
 
 .about-kanan img {
-    width: 400px;
+    width: 500px;
     position: absolute;
-    left: 100px;
-    top: -100px;
+    left: 80px;
+    top: -260px
 }
 
 .about-kiri h2 {
@@ -420,12 +421,13 @@ form textarea {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .about-kiri a {
     background: transparent;
-    border: 1.5px #cacaca solid;
-    color: #cacaca;
+    border: 1.5px #ffffff solid;
+    color: #ffffff;
     padding: 16px 26px;
     border-radius: 8px;
     margin: 10px;
@@ -435,7 +437,7 @@ form textarea {
 }
 
 .about-kiri a:hover {
-    background: #cacaca;
+    background: #ffffff;
     color: #000000;
 }
 
