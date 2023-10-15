@@ -348,6 +348,10 @@
     .contact-kiri {
         display: none;
     }
+
+    .box-email {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -456,5 +460,15 @@
 
     form input, form textarea {
         width: 300px;
+    }
+
+    .contact-kanan h1 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    form input, form textarea {
+        width: 250px;
     }
 }
