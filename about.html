@@ -49,15 +49,26 @@
     <div id="about">
         <div class="container-about">
             <div class="about-kiri">
-                <h1>So Who Am I?</h1>
-                <p>Greetings Everyone...! My name is Vallian Sayoga Chandra, maybe you guys already know because i put it at the first page that you opened... Anyways, i'm 15 years old, i was born on the year of 2008 in Indonesia, especially in Indonesia, my hobbies are playing football, badminton, leg day, and coding. My future dream is i wanna be one of the best full-stack website developers in the world, but if it's too hard to be full-stack, maybe i'll be front-end, because my passion is not thinking logic or input and saving data, but my passion is about making a beautiful website like this one, im still upgrading my skill because i'm still a junior developer, but one day i'll be there, at the top.</p>
-                <a href="index.html">Contact Me</a>
+                <p>Hello, I am Vallian Sayoga Chandra</p>
+                <h2>My Hobbies are <span id="auto-type"></span></h2>
+                <a href="index.html">Hire Me</a>
+                <a href="aboutmore.html">More About Me</a>
             </div>
             <div class="about-kanan">
-                <img src="./Images/mirror-masjid.jpeg" alt="Me">
+                <img src="./Images/about-mirror.png" alt="Me">
             </div>
         </div>
     </div>
 
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#auto-type', {
+            strings: ['Coding', 'Designing', 'Playing Football', 'Learning'],
+            typeSpeed: 110,
+            backSpeed: 110,
+            loop: true
+        });
+    </script>
 </body>
 </html>

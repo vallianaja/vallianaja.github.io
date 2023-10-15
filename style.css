@@ -385,13 +385,14 @@ form textarea {
 .container-about {
     height: 100vh;
     width: 100vw;
+    background: #080808;
     display: flex;
     align-items: center;
 }
 
 .about-kiri {
     width: 50%;
-    color: #111111;
+    color: #cacaca;
     margin-left: 100px;
     margin-top: 40px;
     font-family: 'Lato';
@@ -399,48 +400,43 @@ form textarea {
 
 .about-kanan {
     width: 50%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    position: relative;
 }
 
 .about-kanan img {
-    border-radius: 30px;
-    margin-top: 70px;
-    margin-right: 20px;
-    width: 70%;
-    border: 2px #000000 solid;
-    box-shadow: 15px 15px #2f2f2f;
+    width: 400px;
+    position: absolute;
+    left: 100px;
+    top: -100px;
 }
 
-.about-kiri h1 {
+.about-kiri h2 {
     font-size: 50px;
-    margin-top: 20px;
+    margin-bottom: 80px;
+    white-space: nowrap;
 }
 
 .about-kiri p {
-    text-align: justify;
-    margin-bottom: 60px;
-    margin-top: 42px;
     font-size: 18px;
-    width: 100%;
     font-weight: 400;
+    margin-bottom: 20px;
 }
 
 .about-kiri a {
     background: transparent;
-    border: 1.5px #000000 solid;
-    color: #000000;
+    border: 1.5px #cacaca solid;
+    color: #cacaca;
     padding: 16px 26px;
-    border-radius: 12px;
+    border-radius: 8px;
+    margin: 10px;
     text-decoration: none;
     font-size: 16px;
     transition: 0.25s;
 }
 
 .about-kiri a:hover {
-    background: #000000;
-    color: #ffffff;
+    background: #cacaca;
+    color: #000000;
 }
 
 /*--------------- Work ---------------*/
