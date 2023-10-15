@@ -385,7 +385,7 @@ form textarea {
 .container-about {
     height: 100vh;
     width: 100vw;
-    background: #080808;
+    background: #ffffff;
     display: flex;
     align-items: center;
     overflow-y: hidden;
@@ -393,7 +393,7 @@ form textarea {
 
 .about-kiri {
     width: 50%;
-    color: #ffffff;
+    color: #000000;
     margin-left: 100px;
     margin-top: 40px;
     font-family: 'Lato';
@@ -426,8 +426,8 @@ form textarea {
 
 .about-kiri a {
     background: transparent;
-    border: 1.5px #ffffff solid;
-    color: #ffffff;
+    border: 1.5px #000000 solid;
+    color: #000000;
     padding: 16px 26px;
     border-radius: 8px;
     margin: 10px;
@@ -437,8 +437,54 @@ form textarea {
 }
 
 .about-kiri a:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+/*--------------- About More -------------*/
+.container-aboutmore {
+    height: 100vh;
+    width: 100vw;
     background: #ffffff;
     color: #000000;
+    font-family: 'Lato';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.isi-about {
+    width: 85%;
+}
+
+.isi-about h1 {
+    letter-spacing: 3px;
+    font-size: 3em;
+}
+
+.isi-about p {
+    font-size: 18px;
+}
+
+.container-aboutmore a {
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.garis-about {
+    width: 10%;
+    background: #000000;
+    color: #000000;
+    height: 3px;
+    border-radius: 10000px;
+    margin: 50px 0px 50px 0px;
 }
 
 /*--------------- Work ---------------*/
