@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official - NewAgricult</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+
+    <!-- link font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- link tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- link flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- link favicon -->
+    <link rel="icon" type="image/x-icon" href="./image/n-logo.png">
+</head>
+
+<body class="font-['Poppins']">
+    <div class="w-screen h-screen md:bg-[#498E12] bg-white flex justify-center items-center">
+        <div class="p-14 bg-white rounded-[15px] flex flex-col items-center">
+            <h1 class="md:text-[35px] text-[25px] text-[#498E12] font-semibold md:mb-[41px] mb-[31px]">Join Us!</h1>
+
+            <form id="mainForm" class="flex flex-col space-y-7 md:w-80 w-60" action="#">
+                <input id="fnameInp" class="border-[2px] border-[#498E12] rounded-md md:text-[14px] text-[12.5px]" type="text"
+                    placeholder="First Name">
+                <input id="lnameInp" class="border-[2px] border-[#498E12] rounded-md md:text-[14px] text-[12.5px]" type="text"
+                    placeholder="Last Name">
+                <input id="emailInp" class="border-[2px] border-[#498E12] rounded-md md:text-[14px] text-[12.5px]" type="email"
+                    placeholder="Email">
+                <input id="passwordInp" class="border-[2px] border-[#498E12] rounded-md md:text-[14px] text-[12.5px]" type="password"
+                    placeholder="Password">
+                <button class="py-3 bg-[#498E12] rounded-md border-none md:text-[15px] text-[13.5px] text-white"
+                    type="submit">Submit</button>
+                <p class="self-center md:text-[14px] text-[12.5px]">Already have an account? <a
+                        class="text-blue-700 font-medium underline" href="login-newagri.html">Login</a></p>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Firebase -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+        import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBa2sfIZX5pBC-ZZwBS19KZqzt8-KF_JqI",
+            authDomain: "newagricult-rev.firebaseapp.com",
+            databaseURL: "https://newagricult-rev-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "newagricult-rev",
+            storageBucket: "newagricult-rev.appspot.com",
+            messagingSenderId: "252315453319",
+            appId: "1:252315453319:web:485b2890dda06d227bf522"
+        };
+      
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase();
+        const auth = getAuth(app);
+
+        let EmailInp = document.getElementById('emailInp');
+        let PassInp = document.getElementById('passwordInp');
+        let FnameInp = document.getElementById('fnameInp');
+        let LnameInp = document.getElementById('lnameInp');
+        let MainForm = document.getElementById('mainForm');
+
+        let RegisterUser = evt => {
+            evt.preventDefault();
+
+            createUserWithEmailAndPassword(auth, EmailInp.value, PassInp.value)
+            .then((credentials) => {
+                set(ref(db, 'UsersAuthList/' + credentials.user.uid), {
+                    firstname: FnameInp.value,
+                    lastname: LnameInp.value
+                })
+            })
+            .catch((error => {
+                alert(error.message);
+                console.log(error.code);
+                console.log(error.message);
+            }))
+        }
+
+        MainForm.addEventListener('submit', RegisterUser);
+      </script>
+</body>
+
+</html>

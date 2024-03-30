@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official - NewAgricult</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+
+    <!-- link font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- link tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- link ionicons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- link flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- link carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- link favicon -->
+    <link rel="icon" type="image/x-icon" href="./image/new-logo.png">
+</head>
+
+<body class="font-['Poppins']">
+    <!-- ========================= -->
+    <!-- Start Splash -->
+    <!-- ========================= -->
+    <div class="splash fixed top-0 left-0 w-screen h-screen bg-[#43721c] z-[900] text-white text-center flex items-center justify-center font-semibold duration-700">
+        <h1 class="fadeIn splash-text text-2xl mb-8 md:mb-5 md:text-5xl ">Welcome To NewAgricult!</h1>
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Start Navbar -->
+    <!-- ========================= -->
+    <section id="nav">
+        <div class="w-full h-auto bg-black/50 fixed z-[700] flex p-4 items-center">
+            <div class="nav-logo w-1/4 flex justify-center items-center">
+                <a href="#homepage"><img class="w-44" src="./image/newagri-text.png" alt="NewAgricult"></a>
+            </div>
+
+            <div
+                class="nav-items lg:w-3/4 w-full duration-500 flex flex-row lg:justify-center items-center top-[-600%] left-0 lg:min-h-fit lg:static absolute p-7 lg:p-0 lg:bg-transparent bg-black/50">
+                <ul class="flex lg:flex-row space-x-0 space-y-10 lg:space-y-0 lg:space-x-20 flex-col ml-2 text-white">
+                    <li><a class="hover:text-[#89BC33] duration-300" href="#homepage">Home</a></li>
+                    <li><a class="hover:text-[#89BC33] duration-300" href="#about">About Us</a></li>
+                    <li><a class="hover:text-[#89BC33] duration-300" href="#services">Services</a></li>
+                    <li><a class="hover:text-[#89BC33] duration-300" href="#whyjoin">Why Join?</a></li>
+                    <li><a class="pt-[9px] pb-[9px] px-9 bg-transparent border border-white rounded-md"
+                            href="register-newagri.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="toggle-res lg:hidden flex w-3/4 items-center justify-end mr-7">
+                <ion-icon onclick="onToggle(this)" name="menu"
+                    class="text-3xl hover:cursor-pointer flex lg:hidden text-white justify-self-end"></ion-icon>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Start Homepage -->
+    <!-- ========================= -->
+    <section id="homepage">
+        <div class="w-screen sm:h-[90vh] h-[75vh] flex flex-col justify-center items-center text-center text-white font-bold bg-no-repeat bg-cover bg-center"
+            style="background-image: url(./image/field.png);">
+            <div class="w-4/5 mt-14">
+                <p class="home-up gone lg:text-[26px] sm:text-[20px] text-[12px] lg:font-bold font-semibold mb-1">
+                    Welcome To NewAgricult</p>
+                <h1 class="home-down gone lg:text-[56px] md:text-[44px] sm:text-[36px] text-[20px] font-bold">Bringing
+                    Farms
+                    Together for Stronger Agriculture Community</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Start About -->
+    <!-- ========================= -->
+    <section id="about">
+        <div class="w-screen h-auto bg-white flex flex-col items-center py-[66px]">
+            <h1 class="about-text text-[#498E12] lg:text-[40px] md:text-[32px] sm:text-[28px] text-[20px] font-semibold gone">
+                About NewAgricult</h1>
+            <div class="line lg:w-[208px] md:w-[180px] sm:w-[140px] w-[100px] h-[2.5px] bg-black mt-[18px]"></div>
+            <div class="about-content md:w-[61%] w-[80%] mt-[50px] lg:text-[22px] md:text-[18px] text-[14px] md:text-justify text-center gone">
+                <p>This company is used to make a teamwork for farmers. It helps them share ideas, tricks, and new ways
+                    of farming, making everyone better at what they do. Together, they can solve problems like changes
+                    in the market, getting what they need, and taking care of the environment. Sharing things like tools
+                    and knowledge also makes everything easier and cheaper for each farmer. When farmers work together,
+                    they have a stronger voice to talk about what they need from the government and to find money for
+                    their projects. So, it's not just about helping one farm; it's about making all the farms better and
+                    more successful, which is good for everyone.</p>
+            </div>
+            <img class="about-img lg:w-[128px] md:w-[100px] w-[80px] mt-8 gone" src="./image/icon-me.png"
+                alt="Vallian S. Chandra">
+            <p class="about-name lg:text-[22px] text-[16px] mt-4 font-medium gone">Vallian S. Chandra</p>
+        </div>
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Start Services -->
+    <!-- ========================= -->
+    <section id="services">
+        <div class="w-screen h-auto flex lg:flex-row flex-col bg-white items-center py-[58px] lg:space-y-0 space-y-6">
+            <div class="lg:w-[53%] w-full items-center justify-center">
+                <div class="box-services w-full h-auto flex flex-col bg-[#498E12] py-24 md:px-20 px-12 text-white lg:rounded-e-2xl rounded-none gone">
+                    <h2 class="font-semibold lg:text-[35px] text-[26px] lg:text-left text-center">Strengthening the
+                        Agriculture Community, Together</h2>
+                    <p class="lg:text-[18px] text-[16px] mt-[47px] lg:text-left text-center">NewAgricult believes that
+                        with a group or a community of great
+                        farmers will make a new inventions to make everything easier for farmers and for other people in
+                        the world.</p>
+                    <p class="lg:text-[18px] text-[16px] mt-[33px] lg:text-left text-center">We just want to make sure
+                        that everyone is comfortable to join us,
+                        here are some of our services</p>
+                </div>
+            </div>
+
+            <div class="lg:w-[47%] w-full">
+                <div class="owl-carousel owl-theme carousel-service gone">
+                    <div class="item-carousel py-12 px-7 bg-transparent border-[1.5px] border-[#498E12] rounded-md flex flex-col items-center text-center">
+                        <div class="icon-food p-8 bg-[#498E12] rounded-[999px]">
+                            <i class="fa-solid fa-carrot text-white md:text-6xl text-5xl"></i>
+                        </div>
+                        <h4 class="w-[92%] md:text-[18px] text-[16px] mt-8">Free comsumption for every workers in the
+                            company</h4>
+                    </div>
+                    <div class="item-carousel py-12 px-7 bg-transparent border-[1.5px] border-[#498E12] rounded-md flex flex-col items-center text-center">
+                        <div class="icon-food p-8 bg-[#498E12] rounded-[999px]">
+                            <i class="fa-solid fa-whiskey-glass text-white md:text-6xl text-5xl"></i>
+                        </div>
+                        <h4 class="w-[92%] md:text-[18px] text-[16px] mt-8">Refillable drinks, such as coffee, tea, and
+                            milk every
+                            morning</h4>
+                    </div>
+                    <div class="item-carousel py-12 px-7 bg-transparent border-[1.5px] border-[#498E12] rounded-md flex flex-col items-center text-center">
+                        <div class="icon-food p-8 bg-[#498E12] rounded-[999px]">
+                            <i class="fa-solid fa-screwdriver-wrench text-white md:text-6xl text-5xl"></i>
+                        </div>
+                        <h4 class="w-[92%] md:text-[18px] text-[16px] mt-8">Complete facilities with extra new tools for
+                            new workers
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Start Impact -->
+    <!-- ========================= -->
+    <section id="impact">
+        <div class="w-screen h-auto flex flex-col items-center bg-cover bg-no-repeat bg-center py-[37px]"
+            style="background-image: url(./image/field2.png); background-attachment: fixed;">
+            <h1 class="impact-name text-[28px] text-white font-semibold gone">Our Impact</h1>
+            <div class="impact-content gone w-[80%] justify-center items-center flex md:flex-row flex-col mt-[32px] md:space-y-0 space-y-10">
+                <div class="group-impact md:w-1/3 w-full flex flex-col text-center">
+                    <p class="counter text-[24px] text-white font-medium" data-count="20">0</p>
+                    <p class="text-[15px] text-white mt-1">plants, seeds, and others <br>grow faster</p>
+                </div>
+
+                <div class="group-impact md:w-1/3 w-full flex flex-col text-center">
+                    <p class="counter text-[24px] text-white font-medium" data-count="2">0</p>
+                    <p class="text-[15px] text-white mt-1">empty fields and +500 full <br>fields</p>
+                </div>
+
+                <div class="group-impact md:w-1/3 w-full flex flex-col text-center">
+                    <p class="counter text-[24px] text-white font-medium" data-count="10">0</p>
+                    <p class="text-[15px] text-white mt-1">farmers contribute in <br>this company jobs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Start Join -->
+    <!-- ========================= -->
+    <section id="whyjoin">
+        <div class="w-screen h-auto flex flex-col bg-[#498E12] items-center py-16">
+            <div class="md:w-[47%] w-[80%] group-join flex flex-col items-center text-center">
+                <h1 class="join-title gone text-white font-semibold md:text-[35px] text-[28px]">Why Join Us?</h1>
+                <p class="join-text gone md:text-[18px] text-[15px] text-white md:mt-10 mt-7">NewAgricult have given
+                    away around 10 million dollars to almost
+                    50.000 farmers in the world, and also given away around 10.000 hectare of free empty fields around
+                    the world.</p>
+                <a class="join-btn gone mt-12 py-2 px-10 border md:text-base text-[14px] border-white rounded-md text-white font-medium duration-200 hover:bg-white hover:text-[#498E12]"
+                    href="register-newagri.html">Join Now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Start Footer -->
+    <!-- ========================= -->
+    <section id="footer">
+        <footer class="bg-[#43721c]">
+            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                <div class="sm:flex sm:items-center sm:justify-between mt-10">
+                    <a href="#homepage" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                        <img src="./image/newagri-text.png" class="h-10" alt="NewAgricult" />
+                    </a>
+                    <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0">
+                        <li>
+                            <a href="#about" class="hover:underline me-4 md:me-6">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="my-6 border-white sm:mx-auto lg:my-8" />
+                <span class="block text-sm text-white sm:text-center">© 2024 NewAgricult. All Rights Reserved.</span>
+            </div>
+        </footer>
+    </section>
+
+
+    <!-- link jquery & carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        // =========================
+        // Start Owl Carousel
+        // =========================
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            center: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                550: {
+                    items: 2,
+                    center: false
+                },
+                1024: {
+                    items: 2,
+                    center: true
+                }
+            }
+        })
+
+
+        // =========================
+        // Start Counter
+        // =========================
+        const counters = document.querySelectorAll('.counter')
+        const contain = document.querySelector('.group-impact')
+        let activated = false
+        window.addEventListener("scroll", () => {
+            if (pageYOffset > contain.offsetTop - contain.offsetHeight - 200 && activated === false) {
+                counters.forEach(counter => {
+                    counter.innerText = 0
+                    let count = 0
+
+                    function updateCount() {
+                        const target = parseInt(counter.dataset.count)
+                        if (count < target) {
+                            count++
+                            counter.innerText = count
+                            setTimeout(updateCount, 200)
+                        } else {
+                            counter.innerText = target + 'K'
+                        }
+                    }
+                    updateCount()
+                    activated = true
+                })
+            } else if (pageYOffset < contain.offsetTop - contain.offsetHeight - 500 && activated === true) {
+                counters.forEach(counter => {
+                    counter.innerText = 0
+                })
+                activated = false
+            }
+        })
+
+
+        // =========================
+        // Start Animate On Scroll
+        // =========================
+        const about_text = document.querySelector('.about-text')
+        const line = document.querySelector('.line')
+        const about_content = document.querySelector('.about-content')
+        const about_img = document.querySelector('.about-img')
+        const about_name = document.querySelector('.about-name')
+        const box_service = document.querySelector('.box-services')
+        const carousel_service = document.querySelector('.carousel-service')
+        const impact_name = document.querySelector('.impact-name')
+        const impact_content = document.querySelector('.impact-content')
+        const join_title = document.querySelector('.join-title')
+        const join_text = document.querySelector('.join-text')
+        const join_btn = document.querySelector('.join-btn')
+
+        var height = document.getElementById("homepage").clientHeight
+        console.log(height)
+        window.addEventListener("scroll", () => {
+            console.log(window.scrollY)
+            // if (window.scrollY > 1) {
+            //     home_up.classList.add('fadeUp')
+            //     home_up.classList.remove('gone')
+            // }
+            // if (window.scrollY > 1) {
+            //     home_down.classList.add('fadeUp')
+            //     home_down.classList.remove('gone')
+            // }
+            if (window.scrollY > 150) {
+                about_text.classList.add('fadeUp')
+                about_text.classList.remove('gone')
+            }
+            if (window.scrollY > 350) {
+                about_content.classList.add('fadeUp')
+                about_content.classList.remove('gone')
+            }
+            if (window.scrollY > 600) {
+                about_img.classList.add('fadeRight')
+                about_img.classList.remove('gone')
+            }
+            if (window.scrollY > 650) {
+                about_name.classList.add('fadeLeft')
+                about_name.classList.remove('gone')
+            }
+            if (window.scrollY > 1050) {
+                box_service.classList.add('slideUp')
+                box_service.classList.remove('gone')
+            }
+            if (window.scrollY > 1100) {
+                carousel_service.classList.add('slideUp')
+                carousel_service.classList.remove('gone')
+            }
+            if (window.scrollY > 1450) {
+                impact_name.classList.add('fadeIn')
+                impact_name.classList.remove('gone')
+            }
+            if (window.scrollY > 1550) {
+                impact_content.classList.add('fadeDown')
+                impact_content.classList.remove('gone')
+            }
+            if (window.scrollY > 1800) {
+                join_title.classList.add('fadeUp')
+                join_title.classList.remove('gone')
+            }
+            if (window.scrollY > 1850) {
+                join_text.classList.add('fadeDown')
+                join_text.classList.remove('gone')
+            }
+            if (window.scrollY > 2000) {
+                join_btn.classList.add('fadeIn')
+                join_btn.classList.remove('gone')
+            }
+        });
+
+
+        // =========================
+        // Start Responsive Nav
+        // =========================
+        const navItems = document.querySelector('.nav-items')
+
+        function onToggle(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navItems.classList.toggle('top-[100%]')
+        }
+
+
+
+        // =========================
+        // Start Splash
+        // =========================
+        const splash = document.querySelector('.splash')
+        const splash_text = document.querySelector('.splash-text')
+        const home_up = document.querySelector('.home-up')
+        const home_down = document.querySelector('.home-down')
+        document.addEventListener('DOMContentLoaded', (e) => {
+            setTimeout(() => {
+                splash_text.classList.add('fadeOut')
+            }, 1500)
+            setTimeout(() => {
+                splash.classList.add('gone')
+            }, 2000)
+            setTimeout(() => {
+                splash.classList.add('hidden')
+            }, 2500)
+            setTimeout(() => {
+                home_up.classList.add('fadeUp')
+                home_up.classList.remove('gone')
+            }, 2505)
+            setTimeout(() => {
+                home_down.classList.add('fadeUp')
+                home_down.classList.remove('gone')
+            }, 2505)
+        })
+    </script>
+</body>
+
+</html>

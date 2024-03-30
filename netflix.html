@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix UI - Bootstrap</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+
+    <!-- package -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Flex' rel='stylesheet'>
+
+    <!-- Start CSS -->
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        body {
+            background-color: #181818;
+        }
+
+        nav {
+            transition: 0.3s ease-in-out;
+        }
+
+        .fs-0 {
+            font-size: 7.5em;
+        }
+
+        .animate-hover:hover {
+            background: #101010;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .fs-0 {
+                font-size: 4.5em;
+            }
+        }
+    </style>
+    <!-- End CSS -->
+</head>
+
+<body>
+
+    <!-- Start Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: #101010;">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <img src="./image/netflix.png" alt="logo" class="img-logo" style="width: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Film</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TV Show</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Genre
+                        </a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-light animate-hover" href="#">Dokumenter</a></li>
+                            <li><a class="dropdown-item text-light animate-hover" href="#">Action</a></li>
+                            <li>
+                                <hr class="dropdown-divider bg-white">
+                            </li>
+                            <li><a class="dropdown-item text-light animate-hover" href="#">Others</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Hero -->
+    <section id="hero">
+        <div class="container-fluid"
+            style="height: 100vh; background-image: url(./image/ney.png); background-repeat: no-repeat; background-size: cover;">
+            <div class="row text-light h-100">
+                <div class="col-md-6 d-flex flex-column justify-content-center h-100 ms-5">
+                    <div class="serial d-flex mt-5 mb-0">
+                        <img src="./image/nlogo.png" alt="N Logo" style="height: 40px;">
+                        <p class="fs-2 text-secondary ms-3 mt-0 mb-0" style="letter-spacing: 7px;">SERIAL</p>
+                    </div>
+                    <p class="fs-0 mb-0 mt-0 lh-1"
+                        style="letter-spacing: -3px; font-weight: 900; text-shadow: 0px 0px 15px #ffffff90;">NEYMAR</p>
+                    <p class="fs-1 fw-semibold mt-0" style="letter-spacing: 6.5px;">THE PERFECT CHAOS</p>
+                    <a href="https://www.netflix.com/id/title/81005126" target="_blank"
+                        class="btn btn-dark ps-4 pe-4 pt-2 pb-2 w-25 bg-transparent border border-2 border-light">Watch
+                        Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+
+    <!-- Start Advers -->
+    <section id="advers">
+        <div class="container" style="height: 45vh; margin-top: 75px;">
+            <div class="row text-light mt-5">
+                <div class="col-md-8 d-flex flex-column lh-1">
+                    <p class="fs-4 text-secondary"><span class="text-success">97% Cocok </span> 2022 Serial Terbatas
+                        <span
+                            class="d-inline-block ps-2 pe-2 pt-1 pb-1 border rounded-1 border-1 border-secondary">HD</span>
+                    </p>
+                    <p class="fs-5 text-white fw-light"><span
+                            class="d-inline-block pe-2 ps-2 pt-1 pb-1 border border-1 border-secondary">16+ </span>
+                        Kata-Kata Kasar</p>
+                    <br>
+                    <br>
+                    <p class="fs-4 text-white fw-light lh-base">Dipuja-puja di seluruh dunia sekaligus dicerca
+                        habis-habisan,
+                        Neymar berbagi suka duka dalam kehidupan pribadi dan karier
+                        sepak bolanya yang gemilang.</p>
+                </div>
+
+                <div class="col-md-4 d-flex flex-column lh-lg">
+                    <p class="fs-5 fw-light"><span class="text-secondary">Pemeran: </span> Neymar Jr</p>
+                    <p class="fs-5 fw-light"><span class="text-secondary">Genre: </span> Olahraga & Kebugaran,
+                        Dokumenter Biografi, Serial Dokumenter</p>
+                    <p class="fs-5 fw-light"><span class="text-secondary">Acara Ini: </span> Seru</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Advers -->
+
+
+    <!-- Start Line -->
+    <div style="height: 4px; width: 100%; background-color: #181818;"
+        class="d-flex justify-content-center align-items-center">
+        <div style="height: 3px; width: 90%;" class="bg-secondary rounded d-md-block d-sm-none d-none"></div>
+    </div>
+    <!-- End Line -->
+
+
+    <!-- Start Others -->
+    <section id="others">
+        <div class="container" style="height: 90vh; margin-top: 90px;">
+            <p class="fs-1 text-light">Lainnya Seperti Ini</p>
+            <p class="fs-5 text-light">Tekan gambar untuk informasi lebih lengkap</p>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card d-flex flex-column text-light fw-light m-2" style="background: #2f2f2f;">
+                        <button type="button" class="border-0" style="background-color: #2f2f2f;" data-bs-toggle="modal"
+                            data-bs-target="#worldcup">
+                            <img src="./image/captains.jpeg" alt="Captains Of The World" class="img-thumbnail border-0"
+                                style="background: #2f2f2f;">
+                        </button>
+                        <div class="card-body">
+                            <h5 class="card-title fw-medium fs-4">Captains Of The World</h5>
+                            <p class="fw-light" style="color: #BCBCBC;"><span
+                                    class="d-inline-block pe-2 ps-2 border border-1 border-secondary">13+ </span> 2023
+                            </p>
+                            <p class="card-text">Dari ruang loker hingga lapangan, serial dokumenter ini membagikan
+                                kisah eksklusif 32
+                                tim yang berlaga untuk meraih puncak kejayaan sepak bola di
+                                Piala Dunia FIFA 2022.</p>
+                            <a href="https://www.netflix.com/title/81681112" target="_blank"
+                                class="btn border border-2 border-secondary text-light fw-light">Go Watch</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card d-flex flex-column text-light fw-light m-2" style="background: #2f2f2f;">
+                        <button type="button" class="border-0" style="background-color: #2f2f2f;" data-bs-toggle="modal"
+                            data-bs-target="#figo">
+                            <img src="./image/figo.jpeg" alt="The Figo Affair" class="img-thumbnail border-0"
+                                style="background: #2f2f2f;">
+                        </button>
+                        <div class="card-body">
+                            <h5 class="card-title fw-medium fs-4">The Figo Affair</h5>
+                            <p class="fw-light" style="color: #BCBCBC;"><span
+                                    class="d-inline-block pe-2 ps-2 border border-1 border-secondary">16+ </span> 2023
+                            </p>
+                            <p class="card-text">Film dokumenter ini menyoroti salah satu kesepakatan paling
+                                kontroversial dalam sejarah sepak bola serta pemain yang berada di pusat badai
+                                kontroversi itu: Luis Figo.</p>
+                            <a href="https://www.netflix.com/id/title/81386989" target="_blank"
+                                class="btn border border-2 border-secondary text-light fw-light">Go Watch</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card d-flex flex-column text-light fw-light m-2" style="background: #2f2f2f;">
+                        <button type="button" class="border-0" style="background-color: #2f2f2f;" data-bs-toggle="modal"
+                            data-bs-target="#david">
+                            <img src="./image/beckham.jpeg" alt="Beckham" class="img-thumbnail border-0"
+                                style="background: #2f2f2f;">
+                        </button>
+                        <div class="card-body">
+                            <h5 class="card-title fw-medium fs-4">Beckham</h5>
+                            <p class="fw-light" style="color: #BCBCBC;"><span
+                                    class="d-inline-block pe-2 ps-2 border border-1 border-secondary">16+ </span> 2023
+                            </p>
+                            <p class="card-text">Berisi rekaman yang belum pernah ditayangkan, dokumenter ini merunut
+                                perkembangan pesat David Beckham dari awal yang sederhana sampai menjadi bintang sepak
+                                bola dunia.</p>
+                            <a href="https://www.netflix.com/title/81223488" target="_blank"
+                                class="btn border border-2 border-secondary text-light fw-light">Go Watch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Others -->
+
+
+    <!-- Start Modal -->
+    <div class="modal fade" id="david" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Beckham</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body lh-">
+                    The greatest crosser of all time, he can curve like no one else can, a fenomenal free kick also be
+                    his speciality, he had 1 terrible season at Manchester United, but he pays everything he did, then
+                    went to madrid and being compared to Figo, Ronaldo, and Zidane, he even switch free kicks
+                    alternately with Roberto Carlos, absolutely fenomenal, and ending his career in PSG is beautiful,
+                    everyone wants to see him play again.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="figo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">The Figo Affair</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body lh-">
+                    Luis Figo... once a great man, played for Barcelona, loved by everyone in Barcelona, and promises to
+                    never leave Barcelona, but he betrayed everything that he said, he went to the derby team Real
+                    Madrid, making him one of the most hated person in the history of football, everyone hated him, the
+                    fans even burn their Figo Bercelona fans shirt, very hard time for Figo.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="worldcup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Captains Of The World</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body lh-">
+                    behind-the-scenes look at the 2022 FIFA World Cup. It is a follow up to the 2022 co-produced series
+                    Captains, which documented players efforts as their teams fought to qualify for the highly
+                    anticipated sporting event that took place in Qatar that is the World Cup. Now this is the
+                    documentary features behind-the-scenes footage and exclusive interviews with captains, prominent
+                    players, coaches and more, including Harry Kane, Gareth Bale, Lionel Messi, Cristiano Ronaldo,
+                    Kylian Mbappé and Simon Kjær, and revisits the tragedies and triumphs of the 2022 FIFA World Cup.
+                    From Messi's records with Argentina's big win to the biggest upsets of players like Ronaldo, Harry
+                    Kane and Thiago Silva, the story covers every angle of the journey.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+
+    <!-- Start Carousel -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade mt-3 d-md-block d-sm-none d-none">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABR-W8drinBC8pq-b_qjwod9P51sc0Pyi934Vw6PGDhHehJn6luOAVIy13VqaGIgJPzpnyhG88JWtnMEZvl12pQzo9Jip_q3lgMgI.jpg?r=056"
+                    class="d-block w-100" alt="Pele">
+            </div>
+            <div class="carousel-item">
+                <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABcjdPsAO71gw7MT1zp5o_jhTDcp7I93-kVMMz6QvlTmQZ0c0ExOJ4qwJNf5a0P2LMBzczj8M7EI-4Zptyl1MG1LkoVU5_-G14ZEw.jpg?r=8d4"
+                    class="d-block w-100" alt="Captains">
+            </div>
+            <div class="carousel-item">
+                <img src="https://espnpressroom.com/us/files/2020/03/DROPIN_1280x720_april19-PR-copy.jpg"
+                    class="d-block w-100" alt="The Last Dance">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- End Carousel -->
+
+
+    <!-- Start JS -->
+    <script>
+        let prevScrollPos = window.pageYOffset;
+
+        window.onscroll = function () {
+            let currentScrollPos = window.pageYOffset;
+            const navbar = document.getElementById("navbar");
+
+            if (prevScrollPos > currentScrollPos) {
+                navbar.style.top = "0";
+            } else {
+                navbar.style.top = "-10vh"; // Sesuaikan dengan tinggi navbar
+            }
+
+            prevScrollPos = currentScrollPos;
+        }
+    </script>
+    <!-- End JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

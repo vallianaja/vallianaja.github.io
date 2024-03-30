@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - NewAgricult</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+
+    <!-- link font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- link tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- link flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- link favicon -->
+    <link rel="icon" type="image/x-icon" href="./image/new-logo.png">
+</head>
+
+<body class="font-['Poppins']">
+    <div class="w-screen h-screen bg-white flex">
+        <div class="nav-items h-full lg:w-1/5 w-[23%] lg:bg-[#43721C] flex flex-col lg:p-12 sm:p-3 p-1 duration-500 left-[-200%] lg:min-h-fit lg:static absolute bg-[#43721C]">
+            <img class="lg:block hidden" src="./image/newagri-text.png" alt="NewAgricult">
+            <div class="space-y-6 flex flex-col mt-[55px] text-white font-medium lg:text-[22px] sm:text-[18px] text-[14px]">
+                <a class="hover:text-white/50 lg:mt-0 mt-5" href="#">Dashboard</a>
+                <a class="hover:text-white/50" href="#">Work</a>
+                <a class="hover:text-white/50" href="#">Friends</a>
+                <button id="signoutbutton" class="text-red-400 hover:text-red-500 text-start" type="button">Logout</button>
+            </div>
+        </div>
+        <div class="toggle-res lg:hidden flex mr-7">
+            <ion-icon onclick="onToggle(this)" name="menu"
+                class="text-3xl m-4 hover:cursor-pointer lg:hidden text-black"></ion-icon>
+        </div>
+
+        <div class="lg:w-4/5 w-full flex lg:p-20 p-12">
+            <h1 class="font-semibold lg:text-[22px] text-[18px] lg:text-left text-right">Hello!, welcome to your Dashboard, this is where you will get
+                updated on what your gonna do next!</h1>
+        </div>
+    </div>
+
+
+    <!-- Firebase -->
+    <script>
+        let UserCreds = JSON.parse(sessionStorage.getItem("user-creds"));
+        let UserInfo = JSON.parse(sessionStorage.getItem("user-info"));
+        let SignoutBtn = document.getElementById('signoutbutton');
+
+        let Signout = () => {
+            sessionStorage.removeItem("user-creds");
+            sessionStorage.removeItem("user-info");
+            window.location.href = 'newagricult.html'
+        }
+
+        let CheckCred = () => {
+            if (!sessionStorage.getItem("user-creds"))
+                window.location.href = 'newagricult.html'
+        }
+
+        window.addEventListener('load', CheckCred);
+        SignoutBtn.addEventListener('click', Signout)
+
+        // =========================
+        // Start Responsive Nav
+        // =========================
+        const navItems = document.querySelector('.nav-items')
+
+        function onToggle(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navItems.classList.toggle('left-[0]')
+        }
+        // =========================
+        // End Responsive Nav
+        // =========================
+    </script>
+</body>
+
+</html>
