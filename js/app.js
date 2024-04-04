@@ -112,22 +112,22 @@ const navbar = document.getElementById('nav')
 document.addEventListener('DOMContentLoaded', (e) => {
     setTimeout(() => {
         splash_text.classList.add('fadeOut')
-    }, 2000)
+    }, 1500)
     setTimeout(() => {
         splash_text.classList.add('hidden')
-    }, 3000)
+    }, 2500)
     setTimeout(() => {
         splash.classList.add('fadeOut')
-    }, 3200)
+    }, 2600)
     setTimeout(() => {
         splash.classList.add('hidden')
-    }, 4200)
+    }, 3600)
     setTimeout(() => {
         navbar.classList.add('slideDown')
         navbar.classList.remove('gone')
-    }, 4205)
+    }, 3110)
     setTimeout(() => {
         portfolio_title.classList.add('fadeUp')
         portfolio_title.classList.remove('gone')
-    }, 4285)
+    }, 3200)
 })
