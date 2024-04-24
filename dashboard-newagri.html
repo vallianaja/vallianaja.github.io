@@ -28,7 +28,7 @@
     <link rel="icon" type="image/x-icon" href="./image/new-logo.png">
 </head>
 
-<body class="font-['Poppins']">
+<body class="font-['Poppins']" oncontextmenu="return false;">
     <div class="w-screen h-screen bg-white flex">
         <div class="nav-items h-full lg:w-1/5 w-[23%] lg:bg-[#43721C] flex flex-col lg:p-12 sm:p-3 p-1 duration-500 left-[-200%] lg:min-h-fit lg:static absolute bg-[#43721C]">
             <img class="lg:block hidden" src="./image/newagri-text.png" alt="NewAgricult">
@@ -71,18 +71,38 @@
         window.addEventListener('load', CheckCred);
         SignoutBtn.addEventListener('click', Signout)
 
-        // =========================
+
         // Start Responsive Nav
-        // =========================
         const navItems = document.querySelector('.nav-items')
 
         function onToggle(e) {
             e.name = e.name === 'menu' ? 'close' : 'menu'
             navItems.classList.toggle('left-[0]')
         }
-        // =========================
         // End Responsive Nav
-        // =========================
+
+
+        // Start Hide Code
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+                return false;
+            }
+            if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+                return false;
+            }
+            if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+                return false;
+            }
+        }
     </script>
 </body>
 

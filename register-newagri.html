@@ -28,7 +28,7 @@
     <link rel="icon" type="image/x-icon" href="./image/n-logo.png">
 </head>
 
-<body class="font-['Poppins']">
+<body class="font-['Poppins']" oncontextmenu="return false;">
     <div class="w-screen h-screen md:bg-[#498E12] bg-white flex justify-center items-center">
         <div class="p-14 bg-white rounded-[15px] flex flex-col items-center">
             <h1 class="md:text-[35px] text-[25px] text-[#498E12] font-semibold md:mb-[41px] mb-[31px]">Join Us!</h1>
@@ -95,6 +95,30 @@
         }
 
         MainForm.addEventListener('submit', RegisterUser);
+      </script>
+
+      <script>
+        // Start Hide Code
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+                return false;
+            }
+            if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+                return false;
+            }
+            if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+                return false;
+            }
+        }
       </script>
 </body>
 
