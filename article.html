@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CDN | GOAL Website</title>
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #nav {
+            transition: 0.5s ease-in-out;
+        }
+
+        .nav-kanan a {
+            position: relative;
+        }
+
+        .nav-kanan a::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #E77975;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.4s;
+        }
+
+        .nav-kanan a:hover::after {
+            width: 102%;
+        }
+    </style>
+</head>
+
+<body class="bg-[#252525] text-[#ffffff]">
+
+    <section id="nav" class="navbar w-full z-[999] bg-black border-b-4 border-red-400 py-4 fixed">
+        <div class="flex flex-row">
+            <div class="logo basis-1/6 flex justify-center">
+                <a href="#hero">
+                    <img class="h-6 md:h-8 sm:ml-0 ml-4" src="/image/goal-logo.png" alt="GOAL Logo">
+                </a>
+            </div>
+            <div class="nav-item basis-5/6 flex items-center justify-end sm:justify-normal">
+                <div class="nav-kanan duration-500 text-sm md:text-lg space-x-7 md:space-x-12 font-semibold sm:font-medium sm:flex justify-center top-[-600%] left-0 sm:min-h-fit sm:static absolute w-screen sm:w-auto sm:bg-none bg-black p-7 sm:p-0">
+                    <ul class="flex sm:flex-row flex-col ml-2 gap-10">
+                        <li><a href="https://www.goal.com/en/live-scores">SCORES</a></li>
+                        <li><a href="#">LATEST</a></li>
+                        <li><a href="#">COMPETITIONS</a></li>
+                        <li><a href="#">LIFESTYLE</a></li>
+                        <li><a href="https://en.goalstudio.com/" target="_blank">GOALSTUDIO</a></li>
+                    </ul>
+                </div>
+                <ion-icon onclick="onToggle(this)" name="menu" class="text-3xl hover:cursor-pointer sm:hidden mr-7"></ion-icon>
+            </div>
+        </div>
+    </section>
+
+    <section id="hero" class="hero">
+        <div class="container flex flex-column mx-auto justify-center sm:justify-normal">
+            <div class="title mt-20 w-5/6">
+                <p class="text-3xl mt-8 md:text-6xl" style="font-family: 'Bebas Neue';">Why 'rock bottom' Roma sacked Jose Mourinho
+                    amid awful run of Serie A form</p>
+
+
+                <div class="content rounded-lg w-full sm:w-10/12 bg-[#333333]">
+
+                    <img class="rounded-t-lg mt-7"
+                        src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt86316d9a1fbc7b2f/65a56812f5f472040a2f3649/Mourinho_Roma.jpg?auto=webp&format=pjpg&width=2048&quality=60"
+                        alt="AS Roma">
+
+                    <div class="hidden sm:block m-10 space-x-4 text-xs font-medium">
+                        <a href="#">
+                            <p class="hidden sm:inline-block border rounded-sm p-2">Analysis</p>
+                        </a>
+
+                        <a href="#">
+                            <p class="hidden sm:inline-block border rounded-sm p-2">Jose Mourinho</p>
+                        </a>
+
+                        <a href="#">
+                            <p class="hidden sm:inline-block border rounded-sm p-2">Roma</p>
+                        </a>
+
+                        <a href="#">
+                            <p class="hidden md:inline-block border rounded-sm p-2">Serie A</p>
+                        </a>
+
+                        <a href="#">
+                            <p class="hidden lg:inline-block border rounded-sm p-2">FEATURES</p>
+                        </a>
+
+                        <a href="#">
+                            <p class="hidden lg:inline-block border rounded-sm p-2">AC Milan vs Roma</p>
+                        </a>
+                    </div>
+
+                    <p class="m-10 text-sm sm:text-base">
+                        <span class="font-semibold text-base md:text-lg">The Portuguese was adored by fans after leading the club to
+                            a
+                            European trophy - but this season's results and performances were dire
+                        </span>
+                        
+                        <br><br>
+
+                        Jose Mourinho was booed before kick-off at San Siro on Sunday night - which was utterly
+                        unsurprising. After all, his Roma side were playing AC Milan at the Giuseppe Meazza - not
+                        Mourinho's beloved Inter, with whom the Portuguese shares an unbreakable bond forged by the
+                        Nerazzurri's treble triumph of 2010. It was inevitable that as soon as his face appeared on the
+                        big screen, Milanisti would make their disapproval heard. <br><br>
+
+                        What was noteworthy, though, was the vitriol to which Mourinho's team were subjected by their
+                        own fans after the game, which ended in a 3-1 win for the hosts. As Roma's players went to
+                        acknowledge the 4,000-strong travelling support, they were met with open hostility and
+                        challenged to prove their testicular fortitude. "We've hit rock bottom," striker Andrea Belotti
+                        admitted afterwards. <br><br>
+
+                        Mourinho wasn't present for this bitter backlash, with his latest suspension for lashing out at
+                        officials meaning he had been once again prevented from taking a seat on the bench, forced
+                        instead to watch on from the stands. But he didn't escape criticism. Indeed, for the first time
+                        since he took charge of Roma in 2021, some supporters started to question Mourinho's
+                        methods.<br><br>
+
+                        One frustrated fan wrote online, "Mourinho has ruined us even more than Monchi" - which was one
+                        hell of an accusation, given the disastrous nature of the Spaniard's tenure as sporting
+                        director. But the online attacks were indicative of a significant shift in mood and, ultimately,
+                        signalled the end of Mourinho's Roma reign.<br><br>
+                    </p>
+
+                </div>
+
+
+                <div class="content rounded-lg w-full sm:w-10/12 bg-[#333333]">
+
+                    <img class="rounded-t-lg mt-7"
+                        src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blta21d56cb0991cec5/659b24b87cf33c04079c34ad/mourinho_roma.jpg?auto=webp&format=pjpg&width=2048&quality=60"
+                        alt="Jose Mourinho">
+
+                    <p class="m-10 text-sm sm:text-base">
+                        <span class="font-semibold text-xl md:text-3xl">
+                            Believers became doubters
+                        </span><br><br>
+
+                        'The Special One' was greeted like a god when he arrived at Roma, held up as a saviour by the
+                        club's
+                        long-suffering supporters, and the fans' faith was rewarded with a European trophy (the
+                        Conference
+                        League) at the end of Mourinho's first season at the Stadio Olimpico.<br><br>
+
+                        Mourinho really was their messiah and Giallorossi hung on his every word. When he verbally
+                        assaulted referees, they did too. Granted, there were some concerns over the style of play (or
+                        lack thereof) and some dissenting voices - most notably former Roma forward Antonio Cassano -
+                        but for a long, long time they were drowned out by Roma's new cult hero and his loyal
+                        followers.<br><br>
+
+                        However, some blind believers became doubters during the past six months, as another club came
+                        down with the third-season syndrome that has blighted Mourinho's managerial career. Indeed, it
+                        was obvious very early on during the 2023-24 campaign that all was not right at Roma,
+                        particularly behind the scenes.<br><br>
+                    </p>
+
+                </div>
+
+
+                <div class="versus hidden md:block p-7 rounded-lg w-full sm:w-10/12 bg-[#333333]">
+                    <div class="flex items-center text-center justify-center mb-5">
+                        <p class="text-3xl" style="font-family: 'Bebas Neue';">NEXT MATCH</p>
+                    </div>
+
+                    <div class="flex items-center justify-center ml-16 space-x-6">
+                        <p class="text-2xl ml-2" style="font-family: 'Bebas Neue';">ROMA</p>
+                        <img class="w-10"
+                            src="https://upload.wikimedia.org/wikipedia/id/thumb/f/f7/AS_Roma_logo_%282017%29.svg/1200px-AS_Roma_logo_%282017%29.svg.png"
+                            alt="AS Roma">
+                        <div class="flex flex-col text-center">
+                            <p class="text-xs font-light">21 Jan 2024</p>
+                            <p class="text-2xl" style="font-family: 'Bebas Neue';">00:00</p>
+                        </div>
+                        <img class="w-10"
+                            src="https://upload.wikimedia.org/wikipedia/en/thumb/9/92/Hellas_Verona_FC_logo_%282020%29.svg/1200px-Hellas_Verona_FC_logo_%282020%29.svg.png"
+                            alt="Hellas Verona">
+                        <p class="text-2xl" style="font-family: 'Bebas Neue';">HELLAS VERONA</p>
+                    </div>
+                </div>
+
+
+                <div class="content rounded-lg w-full sm:w-10/12 bg-[#333333]">
+
+                    <img class="rounded-t-lg mt-7"
+                        src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt431007360b8a6eef/65a56e7c940ab1040a9d00d8/Andrea_Belotti_Roma_2023-24.jpg?auto=webp&format=pjpg&width=2048&quality=60"
+                        alt="Player">
+
+                    <p class="m-10 text-sm sm:text-base">
+                        <span class="font-semibold text-xl md:text-3xl">
+                            Roma 'in a deep crisis'
+                        </span><br><br>
+
+                        Sunday's loss at San Siro left Roma ninth in Serie A after winning just one of their previous
+                        six league games, while last week they were knocked out of the Coppa Italia by Lazio.<br><br>
+
+                        As the Gazzetta dello Sport wrote on Monday, the club was "in a deep crisis" and the question
+                        being asked by journalists, fans and reportedly even by Mourinho himself was whether the
+                        two-time Champions League winner was still the right man to lead Roma out of it.<br><br>
+
+                        Before the trip to Milan, there was already talk that Roma's American owners, The Friedkin
+                        Group, were considering sacking Mourinho and replacing him with club legend Daniele De Rossi, at
+                        least on an interim basis. It was also alleged after the game that Mourinho had told his players
+                        that he was willing to resign, as he felt they were no longer following his
+                        instructions.<br><br>
+                    </p>
+
+                </div>
+
+
+                <div class="content rounded-lg w-full sm:w-10/12 bg-[#333333]">
+
+                    <img class="rounded-t-lg mt-7"
+                        src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt36c6459aeb657215/65a26e6dc4b72d040a728bba/mou(1).jpg?auto=webp&format=pjpg&width=2048&quality=60"
+                        alt="Player">
+
+                    <p class="m-10 text-sm sm:text-base">
+                        <span class="font-semibold text-xl md:text-3xl">
+                            'Gruelling' team meeting
+                        </span><br><br>
+
+                        Mourinho had admitted before the Milan match that he had held a "gruelling" team meeting after
+                        the derby defeat and that "some individuals" had come in for especially severe criticism.
+                        However, while Mourinho clearly believed that certain players are not giving enough for the
+                        cause, he has refused to name and shame, primarily because he was, in general, happy with the
+                        effort being put in by what he felt was an overstretched squad.<br><br>
+
+                        And this was the heart of the matter as far as Mourinho was concerned. He simply did not believe
+                        that he had sufficient resources at his disposal to challenge for a top-four finish in Serie
+                        A.<br><br>
+
+                        He repeatedly highlighted his team's injury issues, and particularly those relating to Paulo
+                        Dybala, acknowledging that Roma are simply not the same side without their talented
+                        No.21.<br><br>
+                    </p>
+
+                </div>
+
+
+                <div class="content rounded-lg w-full sm:w-10/12 bg-[#333333]">
+
+                    <img class="rounded-t-lg mt-7"
+                        src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt559bea47913fbd06/659fe29dc2257e040a620afb/dybala_roma.jpg?auto=webp&format=pjpg&width=2048&quality=60"
+                        alt="Paulo Dybala">
+
+                    <p class="m-10 text-sm sm:text-base">
+                        <span class="font-semibold text-xl md:text-3xl">
+                            Can't magic away injury issues
+                        </span><br><br>
+
+                        Of course, many would argue that relying so heavily on a player with such an atrocious fitness
+                        record was a recipe for disaster anyway, but Roma's lack of depth allowed Mourinho to revisit a
+                        theme he has always brought up whenever he is criticised for failing or struggling to achieve a
+                        particular goal - namely that he is a victim of his own success.<br><br>
+
+                        "We're four points off a target (Champions League football) that if it wasn't us we're talking
+                        about, everyone would say is an impossible target," he argued last week. "If you look at the
+                        potential of the teams that really should be finishing in the top four, you can't compare them
+                        to us.<br><br>
+
+                        "But this is us. This is Roma, with the most incredible fans I've ever seen, and with a coach
+                        people think [is called] Jose 'Harry Potter' Mourinho and not Jose Mourinho Felix, whose name
+                        immediately raises expectations and demands."<br><br>
+                    </p>
+
+                </div>
+
+
+                <div class="content rounded-lg w-full sm:w-10/12 bg-[#333333]">
+
+                    <img class="rounded-t-lg mt-7"
+                        src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltf7627e8359c9ce45/65a56f47e0360a040ae64484/Jose_Mourinho_Roma_2023-24.jpg?auto=webp&format=pjpg&width=2048&quality=60"
+                        alt="Jose Mourinho">
+
+                    <p class="m-10 text-sm sm:text-base">
+                        <span class="font-semibold text-xl md:text-3xl">
+                            'We can't go any lower'
+                        </span><br><br>
+
+                        Nobody can deny that Mourinho did a good job in difficult circumstances in his first two seasons
+                        at the Olimpico and he certainly shouldn't be be held solely responsible for Roma's current
+                        woes.<br><br>
+
+                        Tiago Pinto is parting company with the club next month and few fans will be sorry to see the
+                        sporting director go, given there have been more misses than hits in the transfer market during
+                        his three years at Roma. Even his biggest coups - landing Dybala and Romelu Lukaku - are now
+                        being re-evaluated, given the Argentine attacker's aforementioned and long-established
+                        fragility, and the Belgian striker's well-known propensity for disappearing in big games.<br><br>
+
+                        Mourinho's plea for greater support from the club, particularly when it came to dealing with the
+                        press, also went unheeded by his employers. He felt overburdened for a long, long time, as if he
+                        were doing three or four jobs at once.<br><br>
+
+                        However, sympathy is in short supply among the general public right now. Firstly, the football
+                        was typically terrible, the results rotten, and the touchline conduct of the coach and his staff
+                        consistently disgraceful. Many have quite rightly wondered why Mourinho has expended so much
+                        time and energy waging war on officials and opponents that would have been better utilised
+                        getting the best out of a team that was damningly bereft of ideas and confidence. "We can't go
+                        any lower," Belotti told DAZN on Sunday evening.<br><br>
+
+                        Just over a month ago, fans at the Stadio Olimpico unfurled a banner hailing Mourinho as a
+                        "Romanista for life" and he will be forever welcome at the capital club. But some of even
+                        Mourinho's most loyal followers were starting to question their faith in the supposed 'Special
+                        One', making his exit both inevitable and necessary.<br><br>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Start JS -->
+    <script>
+        const navItems = document.querySelector('.nav-kanan')
+        function onToggle(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+           navItems.classList.toggle('top-[106%]')
+        }
+    </script>
+    <!-- End JS -->
+
+</body>
+
+</html>
