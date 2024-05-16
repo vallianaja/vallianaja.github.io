@@ -3,6 +3,7 @@
 const portfolio_title = document.querySelector('.portfolio-title')
 const portfolio_text = document.querySelector('.portfolio-text')
 const portfolio_text_sec = document.querySelector('.portfolio-text-sec')
+const image_alt = document.querySelector('.image-alt')
 const image_home1 = document.querySelector('.image-home1')
 const image_home2 = document.querySelector('.image-home2')
 const image_home3 = document.querySelector('.image-home3')
@@ -86,22 +87,22 @@ window.addEventListener("scroll", () => {
         btn_project.classList.add('fadeDown')
         btn_project.classList.remove('gone')
     }
-    if (window.scrollY > 1700) {
-        contact_title.classList.add('fadeIn')
-        contact_title.classList.remove('gone')
-        contact_title2.classList.add('fadeIn')
-        contact_title2.classList.remove('gone')
-        input1.classList.add('fadeIn')
-        input1.classList.remove('gone')
-        input2.classList.add('fadeIn')
-        input2.classList.remove('gone')
-        text_contact.classList.add('fadeIn')
-        text_contact.classList.remove('gone')
-        textarea.classList.add('fadeIn')
-        textarea.classList.remove('gone')
-        btn_contact.classList.add('fadeIn')
-        btn_contact.classList.remove('gone')
-    }
+    // if (window.scrollY > 1350) {
+    //     contact_title.classList.add('fadeUp')
+    //     contact_title.classList.remove('gone')
+    //     contact_title2.classList.add('fadeUp')
+    //     contact_title2.classList.remove('gone')
+    //     input1.classList.add('fadeUp')
+    //     input1.classList.remove('gone')
+    //     input2.classList.add('fadeUp')
+    //     input2.classList.remove('gone')
+    //     text_contact.classList.add('fadeUp')
+    //     text_contact.classList.remove('gone')
+    //     textarea.classList.add('fadeUp')
+    //     textarea.classList.remove('gone')
+    //     btn_contact.classList.add('fadeUp')
+    //     btn_contact.classList.remove('gone')
+    // }
 });
 
 
@@ -129,28 +130,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     setTimeout(() => {
         portfolio_title.classList.add('fadeUp')
         portfolio_title.classList.remove('gone')
+        image_alt.classList.add('fadeUp')
+        image_alt.classList.remove('gone')
     }, 3200)
 })
-
-
-// Start Hide Code
-document.onkeydown = function (e) {
-    if (event.keyCode == 123) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
-        return false;
-    }
-    if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
-        return false;
-    }
-    if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
-        return false;
-    }
-}
