@@ -1,5 +1,7 @@
 
-// Start Animate On Scroll
+// Start Animate On Scroll\
+const portfolio_title_alt2 = document.querySelector('.portfolio-title-alt2')
+const portfolio_title_alt = document.querySelector('.portfolio-title-alt')
 const portfolio_title = document.querySelector('.portfolio-title')
 const portfolio_text = document.querySelector('.portfolio-text')
 const portfolio_text_sec = document.querySelector('.portfolio-text-sec')
@@ -130,6 +132,10 @@ document.addEventListener('DOMContentLoaded', (e) => {
     setTimeout(() => {
         portfolio_title.classList.add('fadeUp')
         portfolio_title.classList.remove('gone')
+        portfolio_title_alt.classList.add('fadeUp')
+        portfolio_title_alt.classList.remove('gone')
+        portfolio_title_alt2.classList.add('fadeUp')
+        portfolio_title_alt2.classList.remove('gone')
         image_alt.classList.add('fadeUp')
         image_alt.classList.remove('gone')
     }, 3200)
